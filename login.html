@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Form</title>
+ </head>
+ <body>
+
+  <fieldset style="background-color: greenyellow;">
+    <form action="">
+      <div class="container">
+        <legend style="margin-top: 2rem;">Personal information</legend>
+        <table style="color: gray;padding-top: 10px; border: 2;width: 100%;">
+         <tr>
+           <td class="required-field"><label style="color: royalblue;" for="name">Input Name <span style="color: red;">*</span></label></td>
+           <td style="padding-top: 50px;"></td>
+           <td colspan="3"><input type="text" required name="name" style="padding-right: 30%;padding-top: 1rem;" placeholder="Enter name"></td>
+         </tr>
+         <tr>
+           <td class="required-field"><label style="color: royalblue;" for="father_name">Input Father Name<span style="color: red;">*</span></label></td>
+           <td style="padding-top: 50px;"></td>
+           <td colspan="5"><input type="text" style="padding-right: 30%;padding-top: 1rem;" required name="father_name" placeholder="Enter Father Name"></td>
+         </tr>
+         <tr>
+          <td class="required-field"><label style="color: royalblue;" for="mother_name">Input Mother Name<span style="color: red;">*</span></label></td>
+          <td style="padding-top: 50px;"></td>
+          <td colspan="5"><input type="text" required name="mother_name" style="padding-right: 30%; padding-top: 1rem;" placeholder="Enter Mother Name"></td>
+        </tr>
+        <td class="required-field"><label style="color: royalblue;" for="gender">Gender :  <span style="color: red;">*</span></label>
+         <input type="radio" name="gender" id="gender" value="male" checked > Male
+         <input type="radio" name="gender" id="gender" value="female">Female
+         <input type="radio" name="gender" id="gender" value="other">Other
+       </td>
+       <td style="padding-top: 50px;"></td>
+
+       <td class="required-field" colspan="2"><label style="color: royalblue;" for="subject">Subject :<span style="color: red;">*</span></label>
+
+        <input type="checkbox" name="subject" value="subject" id="subject" > Physical
+        <input type="checkbox" name="subject" value="subject" id="subject" >Mental
+        <input type="checkbox" name="subject" value="subject" id="subject" >Theworicital
+        <input type="checkbox" name="subject" value="subject" id="subject" >Another
+      </td>
+    </tr>
+    <td style="padding-top: 10px;"></td>
+
+    <tr>
+      <td class="required-field"><label style="color: royalblue;" for="phone">Input Phone Number<span style="color: red;">*</span></label></td>
+      <td><input type="phone" name="phone" maxlength="11" required placeholder="Enter Phone Number"></td>
+      <td><label style="color: royalblue;" for="email">Input Email </label></td>
+      <td><input type="email" name="email" placeholder="Enter Email "></td>
+    </tr>
+    <td style="padding-top: 10px;"></td>
+
+    <tr>
+     <td class="required-field"><label style="color: royalblue;" for="birth">Birth Date:<span style="color: red;">*</span></label></td>
+     <td><input type="date" name="birthDate" id="birth" ></td>
+     <td><label for="color">Input Color </label></td>
+     <td><input type="color" name="color" placeholder="Enter Color "></td>
+   </tr>
+   <td style="padding-top: 10px;"></td>
+
+   <tr>
+     <td class="required-field"><label style="color: royalblue;" for="country">Country Name:<span style="color: red;">*</span></label></td>
+     <td>
+       <select name="country" id="country">
+         <option value="" selected disabled>Select a Country</option>
+         <option value="bd" >Bangladesh</option>
+         <option value="bd" >Another</option>
+       </select>
+     </td>
+     <td class="required-field"><label style="color: royalblue;" for="country">Select Division<span style="color: red;">*</span></label></td>
+     <td>
+       <select name="country" id="country">
+         <option value="" selected disabled>Select a Devesion</option>
+         <option value="bd" >Dhaka</option>
+         <option value="bd" >Barishal</option>
+         <option value="bd" >Khulna</option>
+         <option value="bd" >Chittagang</option>
+         <option value="bd" >Rongpur</option>
+         <option value="bd" >Another</option>
+       </select>
+     </td>
+
+   </tr>
+   <tr>
+     <td style="padding-top: 10px;"></td>
+   </tr>
+   <tr>
+     <td class="required-field"><label for="image">Upload Your Image <span style="color: red;">*</span><span style="color: red;">Must(300px *300px)</span></label></td>
+     <td><input type="file" name="image" class="image" ></td>
+
+     <td class="required-field"><label for="signature">Upload Your Signature <span style="color: red;">*</span><span style="color: red;">Must(80px *300px)</span></label></td>
+     <td><input type="file" name="signature" class="signature" ></td>
+   </tr>
+
+
+   <tr>
+    <td>
+     <label for="address" style="padding-bottom: 5px;">Type Your Address<span style="color: red;">*</span></label></td>
+     <td>
+       <textarea style="margin-top: 10px;" name="address" id="address" cols="50" rows="2" placeholder="Type Your address( Vill, Up, Thana, Distric, Division......." required></textarea>
+     </tr>
+     <tr>
+      <td>
+       <label for="about_your" style="padding-bottom: 5px;">Type About Your Future<span style="color: red;">*</span></label></td>
+       <td>
+         <textarea style="margin-top: 5px;" name="about_your" id="about_your" cols="50" rows="3" placeholder="Your Plan For Future...." required></textarea>
+       </td>
+     </tr>
+   </table>
+   <br>
+   <br>
+   <h2 style="text-align: center;">
+     <button style="background-color: green; padding: .5%.8%;" type="submit" class="btn btn-success"><b style="size: !important;">Submit</b></button>
+     <button style="background-color: red;padding: .5%.8%;" type="submit" class="btn btn-danger">Cancel</button>
+   </h2>
+ </div>
+</form>
+</fieldset>
+
+</body>
+</html>
